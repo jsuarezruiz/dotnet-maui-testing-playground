@@ -42,7 +42,7 @@
 | B10 - Setting the CornerRadius property set the Button corner radius correctly.  | ✅  | ✅ |  ✏️  |
 | B11 - Changing the CornerRadius property update the Button corner radius correctly.  | ⚠️  | ✅ |  ✏️  |
 | B12 - Setting the Font property set the font of the Button correctly. (OpenSansSemibold)  | ✅  | ✅ |  ✏️  |
-| B13 - Setting the FontAttributes property set the font attributes of the Button correctly.  | ✅  | ❌ |  ✏️  |
+| B13 - Setting the FontAttributes property set the font attributes of the Button correctly.  | ✅  | ❌ ([#12053](https://github.com/dotnet/maui/issues/12053)) |  ✏️  |
 | B14 - Setting the FontSize property set the font size of the Button correctly.  | ✅  | ✅ |  ✏️  |
 | B15 - Setting the Image property set the Button image correctly.  | ✅  | ✅ |  ✏️  |
 | B16 - Setting the Padding property set the Button padding correctly.  | ✅  | ✅ |  ✏️  |
