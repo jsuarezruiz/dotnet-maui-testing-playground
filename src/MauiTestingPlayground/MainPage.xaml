@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MauiTestingPlayground.MainPage"
+    Title=".NET MAUI Testing">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <Style TargetType="Button">
+                <Setter Property="Margin" Value="6" />
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="12">
+            <Button
+                AutomationId="ActivityIndicatorBtn"
+                Text="Activity Indicator"
+                Clicked="OnActivityIndicatorButtonClicked"/>
+            <Button
+                AutomationId="ButtonBtn"
+                Text="Button"
+                Clicked="OnButtonClicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
+

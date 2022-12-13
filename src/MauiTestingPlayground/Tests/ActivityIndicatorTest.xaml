@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MauiTestingPlayground.Tests.ActivityIndicatorTest"
+    Title="ActivityIndicator">
+    <VerticalStackLayout
+        Padding="12">
+        <!-- COLOR -->
+       <Label
+            Text="Color"
+            Style="{StaticResource SectionTitleStyle}"/>
+        <Label
+            Text="AI1 - Setting the Color property set the color of the ActivityIndicator correctly."
+            Style="{StaticResource SectionDescriptionStyle}"/>
+        <ActivityIndicator
+            Color="Red"
+            IsRunning="True"/>
+        <Label
+            Text="AI2 - Changing the Color property changes the color of the ActivityIndicator correctly."
+            Style="{StaticResource SectionDescriptionStyle}"/>
+        <ActivityIndicator
+            x:Name="AI2ActivityIndicator"
+            Color="Red"
+            IsRunning="True"/>
+        <Button
+            x:Name="ChangeColorBtn"
+            Text="Change the Activity Indicator Color"
+            Clicked="OnChangeColorBtnClicked"/>
+        <!-- ISRUNNING -->
+        <Label
+            Text="IsRunning"
+            Style="{StaticResource SectionTitleStyle}"/>
+        <Label
+            Text="AI3 - Setting the IsRunning property to true enable the ActivityIndicator animation."
+            Style="{StaticResource SectionDescriptionStyle}"/>
+        <ActivityIndicator
+            IsRunning="True"/>
+      <Label
+            Text="AI4 - Setting the IsRunning property to false disable the ActivityIndicator animation."
+            Style="{StaticResource SectionDescriptionStyle}"/>
+        <ActivityIndicator
+            IsRunning="False"/>
+        <Label
+            Text="AI5 - Changing the IsRunning property changes the ActivityIndicator animation."
+            Style="{StaticResource SectionDescriptionStyle}"/>
+        <ActivityIndicator
+            x:Name="AI5ActivityIndicator"
+            IsRunning="False"/>
+        <Button
+            x:Name="ChangeIsRunningBtn"
+            Text="Change the Activity IsRunning"
+            Clicked="OnChangeIsRunningBtnClicked"/>
+        <!-- CORE -->
+        <Label
+            Text="Core Properties"
+            Style="{StaticResource SectionTitleStyle}"/>
+        <Label
+            Text="AI6 - Changing the Height and Width changes the ActivityIndicator size."
+            Style="{StaticResource SectionDescriptionStyle}"/>
+        <ActivityIndicator
+            IsRunning="True"
+            HeightRequest="100"
+            WidthRequest="100"/>
+        <Label
+            Text="AI7 - Changing the IsVisible property changes the ActivityIndicator visibility."
+            Style="{StaticResource SectionDescriptionStyle}"/>
+        <ActivityIndicator
+            x:Name="AI7ActivityIndicator"
+            IsRunning="True"/>
+        <Button
+            x:Name="ChangeIsVisibleBtn"
+            Text="Change the Activity IsVisible"
+            Clicked="OnChangeIsVisibleBtnClicked"/>
+        <Label
+            Text="AI8 - Setting the BackgroundColor property set the ActivityIndicator background color."
+            Style="{StaticResource SectionDescriptionStyle}"/>
+        <ActivityIndicator
+            Color="White"
+            IsRunning="True"
+            BackgroundColor="Purple"/>
+        <Label
+            Text="AI9 - Setting the Background property (solid) set the ActivityIndicator background."
+            Style="{StaticResource SectionDescriptionStyle}"/>
+        <ActivityIndicator
+            Color="White"
+            IsRunning="True"
+            Background="Purple"/>
+        <Label
+            Text="AI10 - Setting the Background property (gradient) set the ActivityIndicator background."
+            Style="{StaticResource SectionDescriptionStyle}"/>
+        <ActivityIndicator
+            Color="White"
+            IsRunning="True">
+            <ActivityIndicator.Background>
+                <LinearGradientBrush EndPoint="1, 0">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Color="LightPink" />
+                        <GradientStop Color="DarkRed" Offset="1" />
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </ActivityIndicator.Background>
+        </ActivityIndicator>
+        <Label
+            Text="AI11 - Changing the Background property (gradient) changes the ActivityIndicator background."
+            Style="{StaticResource SectionDescriptionStyle}"/>
+        <ActivityIndicator
+            x:Name="AI11ActivityIndicator"
+            Color="White"
+            IsRunning="True">
+            <ActivityIndicator.Background>
+                <LinearGradientBrush EndPoint="1, 0">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Color="LightPink" />
+                        <GradientStop Color="DarkRed" Offset="1" />
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </ActivityIndicator.Background>
+        </ActivityIndicator>
+        <Button
+            x:Name="ChangeBackgroundBtn"
+            Text="Change the Activity Background"
+            Clicked="OnChangeBackgroundBtnClicked"/>
+        <Label
+            Text="AI12 - Setting the opacity property set the ActivityIndicator opacity."
+            Style="{StaticResource SectionDescriptionStyle}"/>
+        <ActivityIndicator
+            Color="White"
+            Background="Red"
+            IsRunning="True"
+            Opacity="0.15"/>
+        <Label
+            Text="AI13 - Setting the ScaleX and ScaleY property set the ActivityIndicator scale."
+            Style="{StaticResource SectionDescriptionStyle}"/>
+        <ActivityIndicator
+            ScaleX="2"
+            ScaleY="2"
+            Color="Black"
+            IsRunning="True"/>
+        <Label
+            Text="AI14 - Setting a TapGesture enable the ActivityIndicator tapping event."
+            Style="{StaticResource SectionDescriptionStyle}"/>
+        <ActivityIndicator
+            Color="Black"
+            IsRunning="True">
+            <ActivityIndicator.GestureRecognizers>
+                <TapGestureRecognizer
+                    Tapped="OnTapGestureRecognizerTapped"/>
+            </ActivityIndicator.GestureRecognizers>
+        </ActivityIndicator>
+    </VerticalStackLayout>
+</ContentPage>

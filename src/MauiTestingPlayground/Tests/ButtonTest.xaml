@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MauiTestingPlayground.Tests.ButtonTest"
+    Title="Button">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <Style TargetType="Button">
+                <Setter Property="Margin" Value="6" />
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="12">
+            <!-- BORDERCOLOR -->
+            <Label
+                Text="BorderColor"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <Label
+                Text="B1 - Setting the BorderColor property set the color of the Button border correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Button
+                BorderWidth="2"
+                BorderColor="Red"
+                Text="B1"/>
+            <Label
+                Text="B2 - Changing the BorderColor property update the color of the Button border correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Button
+                x:Name="B2Button"
+                BorderWidth="2"
+                Text="B2"/>
+            <Button
+                x:Name="ChangeBorderColorBtn"
+                Text="Change the Button BorderColor"
+                Clicked="OnChangeBorderColorBtnClicked"/>
+            <!-- BORDERRADIUS -->
+            <Label
+                Text="BorderRadius"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <Label
+                Text="B3 - Setting the BorderRadius property set the Button border width correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Button
+                BorderWidth="4"
+                BorderColor="Red"
+                Text="B3"/>
+            <Label
+                Text="B4 - Changing the BorderRadius property update the Button border width correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Button
+                x:Name="B4Button"
+                BorderWidth="{Binding Source={x:Reference B4Slider}, Path=Value}"
+                Text="B4"/>
+            <Slider
+                x:Name="B4Slider"
+                Minimum="0"
+                Value="4"
+                Maximum="20"/>
+            <!-- CHARACTERSPACING -->
+            <Label
+                Text="CharacterSpacing"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <Label
+                Text="B5 - Setting the CharacterSpacing property set the Button text character spacing correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Button
+                CharacterSpacing="10"
+                Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
+            <Label
+                Text="B6 - Changing the CharacterSpacing property update the Button text character spacing correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Button
+                x:Name="B6Button"
+                CharacterSpacing="{Binding Source={x:Reference B6Slider}, Path=Value}"
+                Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
+            <Slider
+                x:Name="B6Slider"
+                Minimum="0"
+                Value="10"
+                Maximum="40"/>
+            <!-- COMMAND -->
+            <Label
+                Text="Command"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <Label
+                Text="B7 - Tapping the following Buttons updates the result invoking the Commands."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <StackLayout>
+                <Label
+                    Text="{Binding Number, StringFormat='Value is now {0}'}"
+                    HorizontalOptions="Center" />
+                <Button
+                    Text="Multiply by 2"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    Command="{Binding MultiplyBy2Command}" />
+                <Button
+                    Text="Divide by 2"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    Command="{Binding DivideBy2Command}" />
+            </StackLayout>
+            <!-- CONTENTLAYOUT -->
+            <Label
+                Text="ContentLayout"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <Label
+                Text="B8 - Setting the ContentLayout property correctly set the Button Layout in all the cases."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Button
+                ImageSource="dotnet_bot.png"
+                Text="Default" />
+            <Button
+                ImageSource="dotnet_bot.png"
+                Text="Left - 10"
+                ContentLayout="Left, 10" />
+            <Button
+                ImageSource="dotnet_bot.png"
+                Text="Top - 10"
+                ContentLayout="Top, 10" />
+            <Button
+                ImageSource="dotnet_bot.png"
+                Text="Right - 20"
+                ContentLayout="Right, 20" />
+            <Button
+                ImageSource="dotnet_bot.png"
+                Text="Bottom - 20" 
+                ContentLayout="Bottom, 20" />
+            <Label
+                Text="B9 - Setting the ContentLayout property correctly set the Button Layout in all the cases. Use a specific Button Height (60)."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Button
+                HeightRequest="60"
+                ImageSource="dotnet_bot.png"
+                Text="Default" />
+            <Button
+                HeightRequest="60"
+                ImageSource="dotnet_bot.png"
+                Text="Left - 10"
+                ContentLayout="Left, 10" />
+            <Button
+                HeightRequest="60"
+                ImageSource="dotnet_bot.png"
+                Text="Top - 10"
+                ContentLayout="Top, 10" />
+            <Button
+                HeightRequest="60"
+                ImageSource="dotnet_bot.png"
+                Text="Right - 20"
+                ContentLayout="Right, 20" />
+            <Button
+                HeightRequest="60"
+                ImageSource="dotnet_bot.png"
+                Text="Bottom - 20" 
+                ContentLayout="Bottom, 20" />
+            <!-- CORNERRADIUS -->
+            <Label
+                Text="CornerRadius"
+                Style="{StaticResource SectionTitleStyle}"/>
+             <Label
+                Text="B10 - Setting the CornerRadius property set the Button corner radius correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Button
+                BorderWidth="4"
+                BorderColor="Red"
+                CornerRadius="12"
+                Text="B10"/>
+            <Label
+                Text="B11 - Changing the CornerRadius property update the Button corner radius correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Button
+                x:Name="B11Button"
+                BorderWidth="4"
+                BorderColor="Red"
+                CornerRadius="{Binding Source={x:Reference B11Slider}, Path=Value}"
+                Text="B11"/>
+            <Slider
+                x:Name="B11Slider"
+                Minimum="0"
+                Value="4"
+                Maximum="60"/>
+            <!-- FONT -->
+            <Label
+                Text="Font"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <Label
+                Text="B12 - Setting the Font property set the font of the Button correctly. (OpenSansSemibold)"
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Button
+                FontFamily="OpenSansSemibold"
+                Text="B12"/>
+            <!-- FONTATTRIBUTES -->
+            <Label
+                Text="FontAttributes"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <Label
+                Text="B13 - Setting the FontAttributes property set the font attributes of the Button correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Button
+                FontAttributes="None"
+                Text="B13 (None)"/>
+            <Button
+                FontAttributes="Italic"
+                Text="B13 (Italic)"/>
+            <Button
+                FontAttributes="Bold"
+                Text="B13 (Bold)"/>
+            <!-- FONTSIZE -->
+            <Label
+                Text="FontSize"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <Label
+                Text="B14 - Setting the FontSize property set the font size of the Button correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Button
+                FontSize="Default"
+                Text="B14 (Default)"/>
+            <Button
+                FontSize="Micro"
+                Text="B14 (Micro)"/>
+            <Button
+                FontSize="Small"
+                Text="B14 (Small)"/>
+            <Button
+                FontSize="Caption"
+                Text="B14 (Caption)"/>
+            <Button
+                FontSize="Medium"
+                Text="B14 (Medium)"/>
+            <Button
+                FontSize="Header"
+                Text="B14 (Header)"/>
+            <Button
+                FontSize="Subtitle"
+                Text="B14 (Subtitle)"/>
+            <Button
+                FontSize="Title"
+                Text="B14 (Title)"/>
+            <!-- IMAGE -->
+            <Label
+                Text="Image"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <Label
+                Text="B15 - Setting the Image property set the Button image correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Button
+                ImageSource="dotnet_bot.png"
+                Text="B15"/>
+            <!-- PADDING -->
+            <Label
+                Text="Padding"
+                Style="{StaticResource SectionTitleStyle}"/>
+              <Label
+                Text="B16 - Setting the Padding property set the Button padding correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Button
+                Padding="{Binding Source={x:Reference B16Slider}, Path=Value}"
+                Text="B16"/>
+            <Slider
+                x:Name="B16Slider"
+                Minimum="0"
+                Value="30"
+                Maximum="60"/>
+            <!-- TEXT -->
+            <Label
+                Text="Text"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <Label
+                Text="B16 - Setting the Padding property set the Button padding correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <!-- TEXTCOLOR -->
+            <Label
+                Text="TextColor"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <Label
+                Text="B17 - Setting the TextColor property set the color of the Button text correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Button
+                TextColor="Red"
+                Text="B17"/>
+            <Label
+                Text="B18 - Changing the TextColor property update the color of the Button text correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Button
+                x:Name="B18Button"
+                Text="B18"/>
+            <Button
+                x:Name="ChangeTextColorBtn"
+                Text="Change the Button TextColor"
+                Clicked="OnChangeTextColorBtnClicked"/>
+            <!-- TEXTTRANSFORM -->
+            <Label
+                Text="TextTransform"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <Label
+                Text="B19 - Setting the TextTransform property set the transform of the Button text correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Button
+                TextTransform="Default"
+                Text="B19 (Default)"/>
+            <Button
+                TextTransform="Lowercase"
+                Text="B19 (Lowercase)"/>
+            <Button
+                TextTransform="None"
+                Text="B19 (None)"/>
+            <Button
+                TextTransform="Uppercase"
+                Text="B19 (Uppercase)"/>
+            <!-- EVENTS -->
+            <Label
+                Text="Clicked"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <Button
+                Clicked="OnButtonClicked"
+                Text="B20"/>
+            <Label
+                Text="Pressed"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <Button
+                Pressed="OnButtonPressed"
+                Text="B21"/>
+            <Label
+                Text="Released"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <Button
+                Released="OnButtonReleased"
+                Text="B22"/>
+            <!-- CORE -->
+            <Label
+                Text="Core Properties"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <Label
+                Text="B23 - Changing the Height and Width changes the Button size."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Button
+                Text="B23"
+                HeightRequest="100"
+                WidthRequest="100"/>
+            <Label
+                Text="B24 - Changing the IsVisible property changes the Button visibility."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Button
+                x:Name="B24Button"
+                Text="B24"/>
+            <Button
+                x:Name="ChangeIsVisibleBtn"
+                Text="Change the Button IsVisible"
+                Clicked="OnChangeIsVisibleBtnClicked"/>
+            <Label
+                Text="B25 - Setting the BackgroundColor property set the Button background color."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Button
+                Text="B25"
+                BackgroundColor="Purple"/>
+            <Label
+                Text="B26 - Setting the Background property (solid) set the Button background."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Button
+                Text="B26"
+                Background="Purple"/>
+            <Label
+                Text="B27 - Setting the Background property (gradient) set the Button background."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Button
+                Text="B27"
+                BorderColor="Red"
+                BorderWidth="4">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1, 0">
+                        <LinearGradientBrush.GradientStops>
+                            <GradientStop Color="LightPink" />
+                            <GradientStop Color="DarkRed" Offset="1" />
+                        </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Label
+                Text="B28 - Changing the Background property (gradient) changes the Button background."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Button
+                x:Name="B28Button"
+                Text="B28"
+                BorderColor="Red"
+                BorderWidth="4">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1, 0">
+                        <LinearGradientBrush.GradientStops>
+                            <GradientStop Color="LightPink" />
+                            <GradientStop Color="DarkRed" Offset="1" />
+                        </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button
+                x:Name="ChangeBackgroundBtn"
+                Text="Change the Button Background"
+                Clicked="OnChangeBackgroundBtnClicked"/>
+            <Label
+                Text="B29 - Setting the opacity property set the Button opacity."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Button
+                TextColor="White"
+                Background="Red"
+                Text="B29"
+                Opacity="0.15"/>
+            <Label
+                Text="B30 - Setting the ScaleX and ScaleY property set the Button scale."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Button
+                ScaleX="2"
+                ScaleY="2"
+                Text="B30"/>
+            <Label
+                Text="B31 - Setting a TapGesture enable the Button tapping event."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Button
+                Text="B31">
+                <Button.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="OnTapGestureRecognizerTapped"/>
+                </Button.GestureRecognizers>
+            </Button>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
