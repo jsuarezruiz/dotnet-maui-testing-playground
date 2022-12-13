@@ -38,7 +38,7 @@
 | B6 - Changing the CharacterSpacing property update the Button text character spacing correctly.  | ✅  | ✅ |  ✏️  |
 | B7 - Tapping the following Buttons updates the result invoking the Commands.  | ✅  | ✅ |  ✏️  |
 | B8 - Setting the ContentLayout property correctly set the Button Layout in all the cases.  | ⚠️  | ✅ |  ✏️  |
-| B9 - Setting the ContentLayout property correctly set the Button Layout in all the cases. Use a specific Button Height (60).  | ❌  | ⚠️ |  ✏️  |
+| B9 - Setting the ContentLayout property correctly set the Button Layout in all the cases. Use a specific Button Height (60).  | ❌ ([#12054](https://github.com/dotnet/maui/issues/12054))  | ⚠️ |  ✏️  |
 | B10 - Setting the CornerRadius property set the Button corner radius correctly.  | ✅  | ✅ |  ✏️  |
 | B11 - Changing the CornerRadius property update the Button corner radius correctly.  | ⚠️  | ✅ |  ✏️  |
 | B12 - Setting the Font property set the font of the Button correctly. (OpenSansSemibold)  | ✅  | ✅ |  ✏️  |
