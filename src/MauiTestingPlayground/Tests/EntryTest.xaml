@@ -205,34 +205,157 @@
             <Entry 
                 IsPassword="True"
                 Text="En20"/>
+            <Label
+                Text="En21 - Setting the FontSize property changes the size of Entry text correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry
+                IsPassword="True"
+                FontFamily="OpenSansSemibold"
+                FontSize="Large"
+                Text="En21" />
+            <Label
+                Text="En22 - Setting the TextColor property changes the color of Entry text correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry
+                IsPassword="True"
+                TextColor="Red"
+                Text="En22" />
+            <Label
+                Text="En23 - Setting the HorizontalTextAlignment property changes the Entry text alignment correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry
+                IsPassword="True"
+                HorizontalTextAlignment="End"
+                Text="En23" />
             <!-- ISTEXTPREDICTIONENABLED -->
             <Label
                 Text="IsTextPredictionEnabled"
                 Style="{StaticResource SectionTitleStyle}"/>
+            <Label
+                Text="En24 - Setting the IsTextPredictionEnabled property set the the Entry text prediction correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry 
+                Text="En24 (False)" 
+                IsTextPredictionEnabled="False" />
+            <Entry 
+                Text="En24 (True)" 
+                IsTextPredictionEnabled="True" />
             <!-- RETURNCOMMAND -->
             <Label
                 Text="ReturnCommand"
                 Style="{StaticResource SectionTitleStyle}"/>
-            <!-- RETURNCOMMANDPARAMETER -->
             <Label
-                Text="ReturnCommandParameter"
-                Style="{StaticResource SectionTitleStyle}"/>
+                Text="En25 - After the Completed event fires, any ICommand specified by the ReturnCommand property is executed, with the object specified by the ReturnCommandParameter property being passed to the ICommand."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry 
+                ReturnCommand="{Binding ReturnCommand}"/>
+            <Label 
+                Text="{Binding Number}"/>
             <!-- RETURNTYPE -->
             <Label
                 Text="ReturnType"
                 Style="{StaticResource SectionTitleStyle}"/>
+            <Label
+                Text="En26 - The appearance of the return key on the soft keyboard, which is displayed when an Entry has focus, can be customized by setting the ReturnType property."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry 
+                Text="Default"
+                ReturnType="Default" />
+            <Entry 
+                Text="Done"
+                ReturnType="Done" />
+            <Entry 
+                Text="Go"
+                ReturnType="Go" />
+            <Entry 
+                Text="Next"
+                ReturnType="Next" />
+            <Entry 
+                Text="Search"
+                ReturnType="Search" />
+            <Entry 
+                Text="Send"
+                ReturnType="Send" />
             <!-- SELECTIONLENGTH -->
             <Label
                 Text="Selectionlength"
                 Style="{StaticResource SectionTitleStyle}"/>
+            <Label
+                Text="En27 - Setting the Selectionlength property set selection of Entry text correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry
+                Text="En27"
+                SelectionLength="2"/>
             <!-- VERTICALTEXTALIGNMENT -->
             <Label
                 Text="VerticalTextAlignment"
                 Style="{StaticResource SectionTitleStyle}"/>
+            <Label
+                Text="En28 - Setting the VerticalTextAlignment property set text alignment of Entry correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry
+                Text="En28"
+                HeightRequest="100"
+                VerticalTextAlignment="Start"/>
+            <Entry
+                Text="En28"
+                HeightRequest="100"
+                VerticalTextAlignment="Center"/>
+            <Entry
+                Text="En28"
+                HeightRequest="100"
+                VerticalTextAlignment="End"/>
+            <Label
+                Text="En29 - Setting the VerticalTextAlignment property set text alignment of Entry correctly. (Placeholder)"
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry
+                Placeholder="En29"
+                HeightRequest="100"
+                VerticalTextAlignment="Start"/>
+            <Entry
+                Placeholder="En29"
+                HeightRequest="100"
+                VerticalTextAlignment="Center"/>
+            <Entry
+                Placeholder="En29"
+                HeightRequest="100"
+                VerticalTextAlignment="End"/>
+            <!-- TEXTTRANSFORM -->
+            <Label
+                Text="TextTransform"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <Label
+                Text="En30 - Setting the TextTransform property set the transform of the Entry text correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry
+                TextTransform="Default"
+                Text="En30 (Default)"/>
+            <Entry
+                TextTransform="Lowercase"
+                Text="En30 (Lowercase)"/>
+            <Entry
+                TextTransform="None"
+                Text="En30 (None)"/>
+            <Entry
+                TextTransform="Uppercase"
+                Text="En30 (Uppercase)"/>
             <!-- EVENTS -->
             <Label
                 Text="Events"
                 Style="{StaticResource SectionTitleStyle}"/>
+            <Label
+                Text="En31 - TextChanged"
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry
+                TextChanged="OnEntryTextChanged"/>
+            <Label
+                Text="En32 - Completed"
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry
+                Completed="OnEntryCompleted"/>
+            <Label
+                Text="En32 - Completed"
+                Style="{StaticResource SectionDescriptionStyle}"/>
             <!-- CORE -->
             <Label
                 Text="Core"
