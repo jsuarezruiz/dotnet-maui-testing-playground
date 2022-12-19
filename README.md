@@ -32,22 +32,22 @@ NOTE: Tests done using .NET MAUI 7.0.100.
 
 | API | Android | iOS / Mac Catalyst | Windows |
 | ----|:-------:|:------------------:|:-------:|
-| Box1 - Setting the Color property set the color of the BoxView correctly. (Height).      | ✏️  | ✏️ |  ✏️  |
-| Box2 - Setting the Color property set the color of the BoxView correctly. (Height and Width)  | ✏️  | ✏️ |  ✏️  |
-| Box3 - Changing the Color property update the color of the BoxView correctly.  | ✏️  | ✏️ |  ✏️  |
-| Box4 - Setting the BackgroundColor property set the color of the BoxView correctly.  | ✏️  | ✏️ |  ✏️  |
-| Box5 - Setting the Color and BackgroundColor properties set the color of the BoxView correctly.  | ✏️  | ✏️ |  ✏️  |
-| Box6 - Setting the Background property set the color of the BoxView correctly. (Solid)  | ✏️  | ✏️ |  ✏️  |
-| Box7 - Setting the Background property set the color of the BoxView correctly. (Gradient)  | ✏️  | ✏️ |  ✏️  |
-| Box8 - Setting the CornerRadius property set the round corners of the BoxView correctly. (0)  | ✏️  | ✏️ |  ✏️  |
-| Box9 - Setting the CornerRadius property set the round corners of the BoxView correctly. (24)  | ✏️  | ✏️ |  ✏️  |
-| Box10 - Changing the CornerRadius property update the Button round corners correctly.  | ✏️  | ✏️ |  ✏️  |
-| Box11 - Changing the Height and Width changes the BoxView size.  | ✏️  | ✏️ |  ✏️  |
-| Box12 - Changing the IsVisible property changes the BoxView visibility.  | ✏️  | ✏️ |  ✏️  |
-| Box13 - Changing the Background property (gradient) changes the BoxView background.  | ✏️  | ✏️ |  ✏️  |
-| Box14 - Setting the opacity property set the BoxView opacity.  | ✏️  | ✏️ |  ✏️  |
-| Box15 - Setting the ScaleX and ScaleY property set the BoxView scale.  | ✏️  | ✏️ |  ✏️  |
-| Box16 - Setting a TapGesture enable the BoxView tapping event.  | ✏️  | ✏️ |  ✏️  |
+| Box1 - Setting the Color property set the color of the BoxView correctly. (Height).      | ✏️  | ✏️ |  ✅  |
+| Box2 - Setting the Color property set the color of the BoxView correctly. (Height and Width)  | ✏️  | ✏️ |  ✅  |
+| Box3 - Changing the Color property update the color of the BoxView correctly.  | ✏️  | ✏️ |  ✅  |
+| Box4 - Setting the BackgroundColor property set the color of the BoxView correctly.  | ✏️  | ✏️ |  ❌  |
+| Box5 - Setting the Color and BackgroundColor properties set the color of the BoxView correctly.  | ✏️  | ✏️ |  ✅  |
+| Box6 - Setting the Background property set the color of the BoxView correctly. (Solid)  | ✏️  | ✏️ |  ❌  |
+| Box7 - Setting the Background property set the color of the BoxView correctly. (Gradient)  | ✏️  | ✏️ |  ❌  |
+| Box8 - Setting the CornerRadius property set the round corners of the BoxView correctly. (0)  | ✏️  | ✏️ |  ✅  |
+| Box9 - Setting the CornerRadius property set the round corners of the BoxView correctly. (24)  | ✏️  | ✏️ |  ✅  |
+| Box10 - Changing the CornerRadius property update the Button round corners correctly.  | ✏️  | ✏️ |  ✅  |
+| Box11 - Changing the Height and Width changes the BoxView size.  | ✏️  | ✏️ |  ✅  |
+| Box12 - Changing the IsVisible property changes the BoxView visibility.  | ✏️  | ✏️ |  ✅  |
+| Box13 - Changing the Background property (gradient) changes the BoxView background.  | ✏️  | ✏️ |  ❌  |
+| Box14 - Setting the opacity property set the BoxView opacity.  | ✏️  | ✏️ |  ✅  |
+| Box15 - Setting the ScaleX and ScaleY property set the BoxView scale.  | ✏️  | ✏️ |  ✅  |
+| Box16 - Setting a TapGesture enable the BoxView tapping event.  | ✏️  | ✏️ |  ✅  |
 
 ### Button
 
