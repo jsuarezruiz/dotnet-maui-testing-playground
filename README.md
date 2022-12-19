@@ -126,7 +126,7 @@
 | En35 - Setting the BackgroundColor property set the Entry background color.  | ✅  | ✏️ |  ✅ |
 | En36 - Setting the Background property (solid) set the Entry background.  | ✅  | ✏️ |  ✅  |
 | En37 - Setting the Background property (gradient) set the Entry background.  | ✅  | ✏️ |  ✅  |
-| En38 - Changing the Background property (gradient) changes the Entry background.  | ❌  | ✏️ |  ✅  |
+| En38 - Changing the Background property (gradient) changes the Entry background.  | ❌ ([#12212](https://github.com/dotnet/maui/issues/12212))  | ✏️ |  ✅  |
 | En39 - Setting the opacity property set the Entry opacity.  | ✅  | ✏️ |  ✅  |
 | En40 - Setting the ScaleX and ScaleY property set the Entry scale.  | ✅  | ✏️ |  ✅  |
-| En41 - Setting a TapGesture enable the Entry tapping event.  | ✅  | ✏️ |  ❌  |
+| En41 - Setting a TapGesture enable the Entry tapping event.  | ✅  | ✏️ |  ❌  ([#12213](https://github.com/dotnet/maui/issues/12213)) |
