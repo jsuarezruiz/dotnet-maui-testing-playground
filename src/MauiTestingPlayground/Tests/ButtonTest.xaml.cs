@@ -13,7 +13,7 @@ public partial class ButtonTest : ContentPage
         BindingContext = new ButtonViewModel();
     }
 
-    void OnChangeBorderColorBtnClicked(System.Object sender, System.EventArgs e)
+    void OnChangeBorderColorBtnClicked(object sender, System.EventArgs e)
     {
         Random rnd = new Random();
         Color borderColor = Color.FromRgba(rnd.Next(256), rnd.Next(256), rnd.Next(256), 255);
@@ -21,7 +21,7 @@ public partial class ButtonTest : ContentPage
         B2Button.BorderColor = borderColor;
     }
 
-    void OnChangeTextColorBtnClicked(System.Object sender, System.EventArgs e)
+    void OnChangeTextColorBtnClicked(object sender, System.EventArgs e)
     {
         Random rnd = new Random();
         Color borderColor = Color.FromRgba(rnd.Next(256), rnd.Next(256), rnd.Next(256), 255);
@@ -29,27 +29,27 @@ public partial class ButtonTest : ContentPage
         B18Button.TextColor = borderColor;
     }
 
-    void OnButtonClicked(System.Object sender, System.EventArgs e)
+    void OnButtonClicked(object sender, System.EventArgs e)
     {
         DisplayAlert("Button", "Clicked", "OK");
     }
 
-    void OnButtonPressed(System.Object sender, System.EventArgs e)
+    void OnButtonPressed(object sender, System.EventArgs e)
     {
         DisplayAlert("Button", "Pressed", "OK");
     }
 
-    void OnButtonReleased(System.Object sender, System.EventArgs e)
+    void OnButtonReleased(object sender, System.EventArgs e)
     {
         DisplayAlert("Button", "Released", "OK");
     }
 
-    void OnChangeIsVisibleBtnClicked(System.Object sender, System.EventArgs e)
+    void OnChangeIsVisibleBtnClicked(object sender, System.EventArgs e)
     {
         B24Button.IsVisible = !B24Button.IsVisible;
     }
 
-    void OnChangeBackgroundBtnClicked(System.Object sender, System.EventArgs e)
+    void OnChangeBackgroundBtnClicked(object sender, System.EventArgs e)
     {
         Random rnd = new Random();
         Color startColor = Color.FromRgba(rnd.Next(256), rnd.Next(256), rnd.Next(256), 255);
@@ -66,7 +66,7 @@ public partial class ButtonTest : ContentPage
         };
     }
 
-    void OnTapGestureRecognizerTapped(System.Object sender, Microsoft.Maui.Controls.TappedEventArgs e)
+    void OnTapGestureRecognizerTapped(object sender, Microsoft.Maui.Controls.TappedEventArgs e)
     {
         DisplayAlert("Button", "Tapped", "OK");
     }

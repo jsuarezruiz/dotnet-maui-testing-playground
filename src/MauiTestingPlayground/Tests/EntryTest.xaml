@@ -360,6 +360,93 @@
             <Label
                 Text="Core"
                 Style="{StaticResource SectionTitleStyle}"/>
+            <Label
+                Text="En33 - Changing the Height and Width changes the Entry size."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry
+                Text="En33"
+                HeightRequest="100"
+                WidthRequest="100"/>
+            <Label
+                Text="En34 - Changing the IsVisible property changes the Entry visibility."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry
+                x:Name="En34"
+                Text="En34"/>
+            <Button
+                x:Name="ChangeIsVisibleBtn"
+                Text="Change the Entry IsVisible"
+                Clicked="OnChangeIsVisibleBtnClicked"/>
+            <Label
+                Text="En35 - Setting the BackgroundColor property set the Entry background color."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry
+                Text="En35"
+                BackgroundColor="Purple"/>
+            <Label
+                Text="En36 - Setting the Background property (solid) set the Entry background."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry
+                Text="En36"
+                Background="Purple"/>
+            <Label
+                Text="En37 - Setting the Background property (gradient) set the Entry background."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry
+                Text="En37">
+                <Entry.Background>
+                    <LinearGradientBrush EndPoint="1, 0">
+                        <LinearGradientBrush.GradientStops>
+                            <GradientStop Color="LightPink" />
+                            <GradientStop Color="DarkRed" Offset="1" />
+                        </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                </Entry.Background>
+            </Entry>
+            <Label
+                Text="En38 - Changing the Background property (gradient) changes the Entry background."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry
+                x:Name="En38"
+                Text="En38">
+                <Entry.Background>
+                    <LinearGradientBrush EndPoint="1, 0">
+                        <LinearGradientBrush.GradientStops>
+                            <GradientStop Color="LightPink" />
+                            <GradientStop Color="DarkRed" Offset="1" />
+                        </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                </Entry.Background>
+            </Entry>
+            <Button
+                x:Name="ChangeBackgroundBtn"
+                Text="Change the Entry Background"
+                Clicked="OnChangeBackgroundBtnClicked"/>
+            <Label
+                Text="En39 - Setting the opacity property set the Entry opacity."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry
+                TextColor="White"
+                Background="Red"
+                Text="En39"
+                Opacity="0.15"/>
+            <Label
+                Text="En40 - Setting the ScaleX and ScaleY property set the Entry scale."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry
+                ScaleX="2"
+                ScaleY="2"
+                Text="En40"/>
+            <Label
+                Text="En41 - Setting a TapGesture enable the Entry tapping event."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry
+                Text="En41">
+                <Entry.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="OnTapGestureRecognizerTapped"/>
+                </Entry.GestureRecognizers>
+            </Entry>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

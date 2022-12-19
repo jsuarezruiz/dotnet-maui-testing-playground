@@ -46,6 +46,33 @@ public partial class EntryTest : ContentPage
     {
         DisplayAlert("Entry", "Completed", "OK");
     }
+
+    void OnChangeIsVisibleBtnClicked(object sender, System.EventArgs e)
+    {
+        En34.IsVisible = !En34.IsVisible;
+    }
+
+    void OnChangeBackgroundBtnClicked(object sender, System.EventArgs e)
+    {
+        Random rnd = new Random();
+        Color startColor = Color.FromRgba(rnd.Next(256), rnd.Next(256), rnd.Next(256), 255);
+        Color endColor = Color.FromRgba(rnd.Next(256), rnd.Next(256), rnd.Next(256), 255);
+
+        En38.Background = new LinearGradientBrush
+        {
+            EndPoint = new Point(1, 0),
+            GradientStops = new GradientStopCollection
+            {
+                new GradientStop { Color = startColor },
+                new GradientStop { Color = endColor }
+            }
+        };
+    }
+
+    void OnTapGestureRecognizerTapped(object sender, Microsoft.Maui.Controls.TappedEventArgs e)
+    {
+        DisplayAlert("Entry", "Tapped", "OK");
+    }
 }
 
 public class EntryViewModel : INotifyPropertyChanged
