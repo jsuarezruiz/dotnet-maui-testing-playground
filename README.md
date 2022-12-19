@@ -13,20 +13,20 @@ NOTE: Tests done using .NET MAUI 7.0.100.
 
 | API | Android | iOS / Mac Catalyst | Windows |
 | ----|:-------:|:------------------:|:-------:|
-| AI1 - Setting the Color property set the color of the ActivityIndicator correctly.      | ✅  | ✅ |  ✏️  |
-| AI2 - Changing the Color property changes the color of the ActivityIndicator correctly.  | ✅  | ✅ |  ✏️  |
-| AI3 - Setting the IsRunning property to true enable the ActivityIndicator animation.  | ✅  | ✅ |  ✏️  |
-| AI4 - Setting the IsRunning property to false disable the ActivityIndicator animation.  | ✅  | ✅ |  ✏️  |
-| AI5 - Changing the IsRunning property changes the ActivityIndicator animation.  | ✅  | ✅ |  ✏️  |
-| AI6 - Changing the Height and Width changes the ActivityIndicator size.  | ✅  | ⚠️ |  ✏️  |
-| AI7 - Changing the IsVisible property changes the ActivityIndicator visibility.  | ✅  | ✅ |  ✏️  |
-| AI8 - Setting the BackgroundColor property set the ActivityIndicator background color.  | ✅  | ✅ |  ✏️  |
-| AI9 - Setting the Background property (solid) set the ActivityIndicator background.  | ✅  | ✅ |  ✏️  |
-| AI10 - Setting the Background property (gradient) set the ActivityIndicator background.  | ✅  | ✅ |  ✏️  |
-| AI11 - Changing the Background property (gradient) changes the ActivityIndicator background.  | ✅  | ✅ |  ✏️  |
-| AI12 - Setting the opacity property set the ActivityIndicator opacity.  | ✅  | ✅ |  ✏️  |
-| AI13 - Setting the ScaleX and ScaleY property set the ActivityIndicator scale.  | ✅  | ✅ |  ✏️  |
-| AI14 - Setting a TapGesture enable the ActivityIndicator tapping event.  | ✅  | ✅ |  ✏️  |
+| AI1 - Setting the Color property set the color of the ActivityIndicator correctly.      | ✅  | ✅ |  ✅  |
+| AI2 - Changing the Color property changes the color of the ActivityIndicator correctly.  | ✅  | ✅ |  ✅  |
+| AI3 - Setting the IsRunning property to true enable the ActivityIndicator animation.  | ✅  | ✅ |  ✅  |
+| AI4 - Setting the IsRunning property to false disable the ActivityIndicator animation.  | ✅  | ✅ |  ✅  |
+| AI5 - Changing the IsRunning property changes the ActivityIndicator animation.  | ✅  | ✅ |  ✅  |
+| AI6 - Changing the Height and Width changes the ActivityIndicator size.  | ✅  | ⚠️ |  ✅  |
+| AI7 - Changing the IsVisible property changes the ActivityIndicator visibility.  | ✅  | ✅ |  ✅  |
+| AI8 - Setting the BackgroundColor property set the ActivityIndicator background color.  | ✅  | ✅ |  ✅  |
+| AI9 - Setting the Background property (solid) set the ActivityIndicator background.  | ✅  | ✅ |  ✅  |
+| AI10 - Setting the Background property (gradient) set the ActivityIndicator background.  | ✅  | ✅ |  ✅  |
+| AI11 - Changing the Background property (gradient) changes the ActivityIndicator background.  | ✅  | ✅ |  ✅  |
+| AI12 - Setting the opacity property set the ActivityIndicator opacity.  | ✅  | ✅ |  ✅  |
+| AI13 - Setting the ScaleX and ScaleY property set the ActivityIndicator scale.  | ✅  | ✅ |  ✅  |
+| AI14 - Setting a TapGesture enable the ActivityIndicator tapping event.  | ✅  | ✅ |  ✅  |
 
 ### BoxView
 

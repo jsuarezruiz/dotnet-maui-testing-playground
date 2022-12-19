@@ -81,7 +81,7 @@
                 Text="Update Placeholder"
                 Clicked="OnUpdatePlaceholderButtonClicked"/>
             <Label
-                Text="E1n0 - Setting the FontSize property changes the size of Entry text correctly."
+                Text="En10 - Setting the FontSize property changes the size of Entry text correctly."
                 Style="{StaticResource SectionDescriptionStyle}"/>
             <Entry
                 FontFamily="OpenSansSemibold"
@@ -353,9 +353,6 @@
                 Style="{StaticResource SectionDescriptionStyle}"/>
             <Entry
                 Completed="OnEntryCompleted"/>
-            <Label
-                Text="En32 - Completed"
-                Style="{StaticResource SectionDescriptionStyle}"/>
             <!-- CORE -->
             <Label
                 Text="Core"
