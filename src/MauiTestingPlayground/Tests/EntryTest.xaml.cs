@@ -24,7 +24,7 @@ public partial class EntryTest : ContentPage
 
     void OnClearPlaceholderButtonClicked(object sender, EventArgs e)
     {
-        En8.Text = string.Empty;
+        En8.Placeholder = string.Empty;
     }
 
     void OnUpdatePlaceholderButtonClicked(object sender, EventArgs e)
