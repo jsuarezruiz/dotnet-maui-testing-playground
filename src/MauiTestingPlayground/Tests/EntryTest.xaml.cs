@@ -29,7 +29,7 @@ public partial class EntryTest : ContentPage
 
     void OnUpdatePlaceholderButtonClicked(object sender, EventArgs e)
     {
-        En9.Text += " more text -";
+        En9.Placeholder += " more text -";
     }
 
     void OnUpdateCursorPositionButtonClicked(object sender, EventArgs e)
