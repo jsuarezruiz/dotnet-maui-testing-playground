@@ -45,7 +45,7 @@
 | Box11 - Changing the Height and Width changes the BoxView size.  | ✅  | ✏️ |  ✅  |
 | Box12 - Changing the IsVisible property changes the BoxView visibility.  | ✅  | ✏️ |  ✅  |
 | Box13 - Changing the Background property (gradient) changes the BoxView background.  | ❌  | ✏️ |  ❌  |
-| Box14 - Setting the opacity property set the BoxView opacity.  | ❌  | ✏️ |  ✅  |
+| Box14 - Setting the opacity property set the BoxView opacity.  | ❌  ([#12211](https://github.com/dotnet/maui/issues/12211)) | ✏️ |  ✅  |
 | Box15 - Setting the ScaleX and ScaleY property set the BoxView scale.  | ✅  | ✏️ |  ✅  |
 | Box16 - Setting a TapGesture enable the BoxView tapping event.  | ✅  | ✏️ |  ✅  |
 
