@@ -89,44 +89,44 @@
 
 | API | Android | iOS / Mac Catalyst | Windows |
 | ----|:-------:|:------------------:|:-------:|
-| En1 - Setting the Text property set the text of the Entry correctly.      | ✏️  | ✏️ |  ✅  |
-| En2 - Clearing the Text property clear the text of the Entry correctly.  | ✏️  | ✏️ |  ✅  |
-| En3 - Updating the Text property update the text of the Entry correctly.  | ✏️  | ✏️ |  ✅  |
-| En4 - Setting the FontSize property changes the size of Entry text correctly.  | ✏️  | ✏️ |  ✅  |
-| En5 - Setting the TextColor property changes the color of Entry text correctly.  | ✏️  | ✏️ |  ✅  |
-| En6 - Setting the HorizontalTextAlignment property changes the Entry text alignment correctly.  | ✏️  | ✏️ | ✅   |
-| En7 - Setting the Placeholder property set the text of the Entry correctly.  | ✏️  | ✏️ |  ⚠️  |
-| En8 - Clearing the Placeholder property clear the text of the Entry correctly.  | ✏️  | ✏️ |  ✅  |
-| En9 - Updating the Placeholder poperty update the text of the Entry correctly.  | ✏️  | ✏️ |  ✅  |
-| En10 - Setting the FontSize property changes the size of Entry placeholder correctly.  | ✏️  | ✏️ |  ✅  |
-| En11 - Setting the PlaceholderColor property changes the color of Entry placeholder correctly.  | ✏️  | ✏️ |  ✅  |
-| En12 - Setting the HorizontalTextAlignment property changes the Entry placeholder alignment correctly.  | ✏️  | ✏️ |  ✅  |
-| En13 - Setting the ClearButtonVisibility property update the Entry clear button visibility correctly.  | ✏️  | ✏️ |  ✅  |
-| En14 - Setting the CursorPosition property set the Entry cursor position correctly.  | ✏️  | ✏️ |  ❌  |
-| En15 - Setting the CursorPosition property set the Entry cursor position correctly.  | ✏️  | ✏️ |  ❌  |
-| En16 - Updating the CursorPosition property update the Entry cursor position correctly.  | ✏️  | ✏️ |  ❌  |
-| En17 - Setting the Font property set the font of the Entry correctly. (OpenSansSemibold)  | ✏️  | ✏️ |  ✅  |
-| En18 - Setting the FontSize property set the font size of the Entry correctly.  | ✏️  | ✏️ |  ✅  |
-| En19 - Setting the HorizontalTextAlignment property set the text alignment of the Entry correctly.  | ✏️  | ✏️ |  ✅  |
-| En20 - Setting the IsPassword property present the contents of the field as black circles.  | ✏️  | ✏️ |  ✅  |
-| En21 - Setting the FontSize property changes the size of Entry text correctly.  | ✏️  | ✏️ |  ✅  |
-| En22 - Setting the TextColor property changes the color of Entry text correctly.  | ✏️  | ✏️ |  ✅  |
-| En23 - Setting the HorizontalTextAlignment property changes the Entry text alignment correctly. | ✏️  | ✏️ |  ✅  |
-| En24 - Setting the IsTextPredictionEnabled property set the the Entry text prediction correctly.  | ✏️  | ✏️ |  ❌  |
-| En25 - After the Completed event fires, any ICommand specified by the ReturnCommand property is executed, with the object specified by the ReturnCommandParameter property being passed to the ICommand.  | ✏️  | ✏️ |  ✅  |
-| En26 - The appearance of the return key on the soft keyboard, which is displayed when an Entry has focus, can be customized by setting the ReturnType property.  | ✏️  | ✏️ |  ❌  |
-| En27 - Setting the Selectionlength property set selection of Entry text correctly.  | ✏️  | ✏️ |  ❌  |
-| En28 - Setting the VerticalTextAlignment property set text alignment of Entry correctly.  | ✏️  | ✏️ |  ✅  |
-| En29 - Setting the VerticalTextAlignment property set text alignment of Entry correctly. (Placeholder)  | ✏️  | ✏️ |  ❌  |
-| En30 - Setting the TextTransform property set the transform of the Entry text correctly.  | ✏️  | ✏️ |  ✅  |
-| En31 - TextChanged  | ✏️  | ✏️ |  ✅  |
-| En32 - Completed  | ✏️  | ✏️ |  ✅  |
-| En33 - Changing the Height and Width changes the Entry size.  | ✏️  | ✏️ |  ✅  |
-| En34 - Changing the IsVisible property changes the Entry visibility.  | ✏️  | ✏️ |  ✅  |
-| En35 - Setting the BackgroundColor property set the Entry background color.  | ✏️  | ✏️ |  ✅ |
-| En36 - Setting the Background property (solid) set the Entry background.  | ✏️  | ✏️ |  ✅  |
-| En37 - Setting the Background property (gradient) set the Entry background.  | ✏️  | ✏️ |  ✅  |
-| En38 - Changing the Background property (gradient) changes the Entry background.  | ✏️  | ✏️ |  ✅  |
-| En39 - Setting the opacity property set the Entry opacity.  | ✏️  | ✏️ |  ✅  |
-| En40 - Setting the ScaleX and ScaleY property set the Entry scale.  | ✏️  | ✏️ |  ✅  |
-| En41 - Setting a TapGesture enable the Entry tapping event.  | ✏️  | ✏️ |  ❌  |
+| En1 - Setting the Text property set the text of the Entry correctly.      | ✅  | ✏️ |  ✅  |
+| En2 - Clearing the Text property clear the text of the Entry correctly.  | ✅  | ✏️ |  ✅  |
+| En3 - Updating the Text property update the text of the Entry correctly.  | ✅  | ✏️ |  ✅  |
+| En4 - Setting the FontSize property changes the size of Entry text correctly.  | ✅  | ✏️ |  ✅  |
+| En5 - Setting the TextColor property changes the color of Entry text correctly.  | ✅  | ✏️ |  ✅  |
+| En6 - Setting the HorizontalTextAlignment property changes the Entry text alignment correctly.  | ✅  | ✏️ | ✅   |
+| En7 - Setting the Placeholder property set the text of the Entry correctly.  | ✅  | ✏️ |  ⚠️  |
+| En8 - Clearing the Placeholder property clear the text of the Entry correctly.  | ✅  | ✏️ |  ✅  |
+| En9 - Updating the Placeholder poperty update the text of the Entry correctly.  | ✅  | ✏️ |  ✅  |
+| En10 - Setting the FontSize property changes the size of Entry placeholder correctly.  | ✅ | ✏️ |  ✅  |
+| En11 - Setting the PlaceholderColor property changes the color of Entry placeholder correctly.  | ✅  | ✏️ |  ✅  |
+| En12 - Setting the HorizontalTextAlignment property changes the Entry placeholder alignment correctly.  | ✅  | ✏️ |  ✅  |
+| En13 - Setting the ClearButtonVisibility property update the Entry clear button visibility correctly.  | ✅  | ✏️ |  ✅  |
+| En14 - Setting the CursorPosition property set the Entry cursor position correctly.  | ❌  | ✏️ |  ❌  |
+| En15 - Setting the CursorPosition property set the Entry cursor position correctly.  | ❌  | ✏️ |  ❌  |
+| En16 - Updating the CursorPosition property update the Entry cursor position correctly.  | ✅  | ✏️ |  ❌  |
+| En17 - Setting the Font property set the font of the Entry correctly. (OpenSansSemibold)  | ✅  | ✏️ |  ✅  |
+| En18 - Setting the FontSize property set the font size of the Entry correctly.  | ✅  | ✏️ |  ✅  |
+| En19 - Setting the HorizontalTextAlignment property set the text alignment of the Entry correctly.  | ✅  | ✏️ |  ✅  |
+| En20 - Setting the IsPassword property present the contents of the field as black circles.  | ✅  | ✏️ |  ✅  |
+| En21 - Setting the FontSize property changes the size of Entry text correctly.  | ✅  | ✏️ |  ✅  |
+| En22 - Setting the TextColor property changes the color of Entry text correctly.  | ✅  | ✏️ |  ✅  |
+| En23 - Setting the HorizontalTextAlignment property changes the Entry text alignment correctly. | ✅  | ✏️ |  ✅  |
+| En24 - Setting the IsTextPredictionEnabled property set the the Entry text prediction correctly.  | ❌  | ✏️ |  ❌  |
+| En25 - After the Completed event fires, any ICommand specified by the ReturnCommand property is executed, with the object specified by the ReturnCommandParameter property being passed to the ICommand.  | ✅ | ✏️ |  ✅  |
+| En26 - The appearance of the return key on the soft keyboard, which is displayed when an Entry has focus, can be customized by setting the ReturnType property.  | ✅  | ✏️ |  ✏️  |
+| En27 - Setting the Selectionlength property set selection of Entry text correctly.  | ❌  | ✏️ |  ❌  |
+| En28 - Setting the VerticalTextAlignment property set text alignment of Entry correctly.  | ✅  | ✏️ |  ✅  |
+| En29 - Setting the VerticalTextAlignment property set text alignment of Entry correctly. (Placeholder)  | ✅  | ✏️ |  ❌  |
+| En30 - Setting the TextTransform property set the transform of the Entry text correctly.  | ✅  | ✏️ |  ✅  |
+| En31 - TextChanged  | ✅  | ✏️ |  ✅  |
+| En32 - Completed  | ✅  | ✏️ |  ✅  |
+| En33 - Changing the Height and Width changes the Entry size.  | ✅  | ✏️ |  ✅  |
+| En34 - Changing the IsVisible property changes the Entry visibility.  | ✅  | ✏️ |  ✅  |
+| En35 - Setting the BackgroundColor property set the Entry background color.  | ✅  | ✏️ |  ✅ |
+| En36 - Setting the Background property (solid) set the Entry background.  | ✅  | ✏️ |  ✅  |
+| En37 - Setting the Background property (gradient) set the Entry background.  | ✅  | ✏️ |  ✅  |
+| En38 - Changing the Background property (gradient) changes the Entry background.  | ❌  | ✏️ |  ✅  |
+| En39 - Setting the opacity property set the Entry opacity.  | ✅  | ✏️ |  ✅  |
+| En40 - Setting the ScaleX and ScaleY property set the Entry scale.  | ✅  | ✏️ |  ✅  |
+| En41 - Setting a TapGesture enable the Entry tapping event.  | ✅  | ✏️ |  ❌  |
