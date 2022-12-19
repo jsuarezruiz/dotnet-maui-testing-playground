@@ -35,10 +35,10 @@
 | Box1 - Setting the Color property set the color of the BoxView correctly. (Height).      | ✅  | ✏️ |  ✅  |
 | Box2 - Setting the Color property set the color of the BoxView correctly. (Height and Width)  | ✅  | ✏️ |  ✅  |
 | Box3 - Changing the Color property update the color of the BoxView correctly.  | ✅  | ✏️ |  ✅  |
-| Box4 - Setting the BackgroundColor property set the color of the BoxView correctly.  | ❌  | ✏️ |  ❌  |
+| Box4 - Setting the BackgroundColor property set the color of the BoxView correctly.  | ❌ ([#12209](https://github.com/dotnet/maui/issues/12209))  | ✏️ |  ❌ ([#12209](https://github.com/dotnet/maui/issues/12209))  |
 | Box5 - Setting the Color and BackgroundColor properties set the color of the BoxView correctly.  | ✅  | ✏️ |  ✅  |
-| Box6 - Setting the Background property set the color of the BoxView correctly. (Solid)  | ❌  | ✏️ |  ❌  |
-| Box7 - Setting the Background property set the color of the BoxView correctly. (Gradient)  | ❌  | ✏️ |  ❌  |
+| Box6 - Setting the Background property set the color of the BoxView correctly. (Solid)  | ❌ ([#12210](https://github.com/dotnet/maui/issues/12210))  | ✏️ |  ❌ ([#12210](https://github.com/dotnet/maui/issues/12210))  |
+| Box7 - Setting the Background property set the color of the BoxView correctly. (Gradient)  | ❌ ([#12210](https://github.com/dotnet/maui/issues/12210))  | ✏️ |  ❌ ([#12210](https://github.com/dotnet/maui/issues/12210))  |
 | Box8 - Setting the CornerRadius property set the round corners of the BoxView correctly. (0)  | ✅  | ✏️ |  ✅  |
 | Box9 - Setting the CornerRadius property set the round corners of the BoxView correctly. (24)  | ✅  | ✏️ |  ✅  |
 | Box10 - Changing the CornerRadius property update the Button round corners correctly.  | ✅  | ✏️ |  ✅  |
