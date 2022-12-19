@@ -52,18 +52,4 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <None Remove="Tests\" />
-	</ItemGroup>
-	<ItemGroup>
-	  <Folder Include="Tests\" />
-	</ItemGroup>
-	<ItemGroup>
-	  <MauiXaml Update="Tests\ButtonTest.xaml">
-	    <SubType></SubType>
-	  </MauiXaml>
-	  <MauiXaml Update="Tests\ActivityIndicatorTest.xaml">
-	    <SubType></SubType>
-	  </MauiXaml>
-	</ItemGroup>
 </Project>

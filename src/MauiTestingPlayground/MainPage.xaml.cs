@@ -14,8 +14,18 @@ public partial class MainPage : ContentPage
 		Navigation.PushAsync(new Tests.ActivityIndicatorTest());
     }
 
+    void OnBoxViewButtonClicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new Tests.BoxViewTest());
+    }
+
     void OnButtonClicked(object sender, EventArgs e)
     {
         Navigation.PushAsync(new Tests.ButtonTest());
+    }
+
+    void OnEntryButtonClicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new Tests.EntryTest());
     }
 }

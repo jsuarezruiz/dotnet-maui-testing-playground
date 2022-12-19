@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MauiTestingPlayground.Tests.BoxViewTest"
+    Title="BoxView">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="12">
+            <!-- COLOR -->
+            <Label
+                Text="Color"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <Label
+                Text="Box1 - Setting the Color property set the color of the BoxView correctly. (Height)"
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <BoxView
+                HeightRequest="100"
+                Color="Red" />
+            <Label
+                Text="Box2 - Setting the Color property set the color of the BoxView correctly. (Height and Width)"
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <BoxView
+                HeightRequest="100"
+                WidthRequest="100"
+                Color="Red" />
+            <Label
+                Text="Box3 - Changing the Color property update the color of the BoxView correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <BoxView
+                x:Name="Box3"
+                HeightRequest="100"
+                WidthRequest="100"
+                Color="Red" />
+            <Button 
+                Text="Update Color"
+                Clicked="OnUpdateColorButtonClicked"/>
+            <Label
+                Text="Box4 - Setting the BackgroundColor property set the color of the BoxView correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <BoxView
+                HeightRequest="100"
+                WidthRequest="100"
+                BackgroundColor="Purple" />
+            <Label
+                Text="Box5 - Setting the Color and BackgroundColor properties set the color of the BoxView correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <BoxView
+                HeightRequest="100"
+                WidthRequest="100"
+                Color="Red"
+                BackgroundColor="Purple" />
+            <Label
+                Text="Box6 - Setting the Background property set the color of the BoxView correctly. (Solid)"
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <BoxView
+                HeightRequest="100"
+                WidthRequest="100"
+                Background="Purple" />
+            <Label
+                Text="Box7 - Setting the Background property set the color of the BoxView correctly. (Gradient)"
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <BoxView
+                HeightRequest="100"
+                WidthRequest="100">
+                <BoxView.Background>
+                    <LinearGradientBrush EndPoint="1, 0">
+                        <LinearGradientBrush.GradientStops>
+                            <GradientStop Color="LightPink" />
+                            <GradientStop Color="DarkRed" Offset="1" />
+                        </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                </BoxView.Background>
+            </BoxView>
+            <!-- CORNERRADIUS -->
+            <Label
+                Text="Box8 - Setting the CornerRadius property set the round corners of the BoxView correctly. (0)"
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <BoxView
+                HeightRequest="100"
+                WidthRequest="100"
+                CornerRadius="0"
+                Color="Red" />
+            <Label
+                Text="Box9 - Setting the CornerRadius property set the round corners of the BoxView correctly. (24)"
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <BoxView
+                HeightRequest="100"
+                WidthRequest="100"
+                CornerRadius="24"
+                Color="Red" />
+            <Label
+                Text="Box10 - Changing the CornerRadius property update the Button round corners correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <BoxView
+                x:Name="Box10"
+                HeightRequest="100"
+                WidthRequest="100"
+                Color="Green"
+                CornerRadius="{Binding Source={x:Reference Box10Slider}, Path=Value}"/>
+            <Slider
+                x:Name="Box10Slider"
+                Minimum="0"
+                Value="20"
+                Maximum="60"/>
+            <!-- CORE -->
+            <Label
+                Text="Core Properties"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <Label
+                Text="Box11 - Changing the Height and Width changes the BoxView size."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <BoxView
+                Color="Aqua"
+                HeightRequest="200"
+                WidthRequest="200"/>
+            <Label
+                Text="Box12 - Changing the IsVisible property changes the BoxView visibility."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <BoxView
+                x:Name="Box12"
+                Color="Blue"
+                HeightRequest="50"
+                WidthRequest="50"/>
+            <Button
+                x:Name="ChangeIsVisibleBtn"
+                Text="Change the BoxView IsVisible"
+                Clicked="OnChangeIsVisibleBtnClicked"/>
+            <Label
+                Text="Box13 - Changing the Background property (gradient) changes the BoxView background."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <BoxView
+                x:Name="Box13"
+                HeightRequest="100"
+                WidthRequest="100"
+                Color="White">
+                <BoxView.Background>
+                    <LinearGradientBrush EndPoint="1, 0">
+                        <LinearGradientBrush.GradientStops>
+                            <GradientStop Color="LightPink" />
+                            <GradientStop Color="DarkRed" Offset="1" />
+                        </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                </BoxView.Background>
+            </BoxView>
+            <Button
+                x:Name="ChangeBackgroundBtn"
+                Text="Change the BoxView Background"
+                Clicked="OnChangeBackgroundBtnClicked"/>
+            <Label
+                Text="Box14 - Setting the opacity property set the BoxView opacity."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <BoxView
+                Color="White"
+                HeightRequest="100"
+                WidthRequest="100"
+                Background="Red"
+                Opacity="0.15"/>
+            <Label
+                Text="Box15 - Setting the ScaleX and ScaleY property set the BoxView scale."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <BoxView
+                ScaleX="2"
+                ScaleY="2"
+                HeightRequest="100"
+                WidthRequest="100"
+                Color="Orange"/>
+            <Label
+                Text="Box16 - Setting a TapGesture enable the BoxView tapping event."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <BoxView
+                Color="Pink"
+                HeightRequest="100"
+                WidthRequest="100">
+                <BoxView.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="OnTapGestureRecognizerTapped"/>
+                </BoxView.GestureRecognizers>
+            </BoxView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

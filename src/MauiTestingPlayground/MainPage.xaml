@@ -21,9 +21,17 @@
                 Text="Activity Indicator"
                 Clicked="OnActivityIndicatorButtonClicked"/>
             <Button
+                AutomationId="BoxViewBtn"
+                Text="BoxView"
+                Clicked="OnBoxViewButtonClicked"/>
+            <Button
                 AutomationId="ButtonBtn"
                 Text="Button"
                 Clicked="OnButtonClicked"/>
+            <Button
+                AutomationId="EntryBtn"
+                Text="Entry"
+                Clicked="OnEntryButtonClicked"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

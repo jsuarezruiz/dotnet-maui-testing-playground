@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MauiTestingPlayground.Tests.EntryTest"
+    Title="Entry">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="12">
+            <!-- TEXT -->
+            <Label
+                Text="Text"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <Label
+                Text="En1 - Setting the Text property set the text of the Entry correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry
+                Text="En1" />
+            <Label
+                Text="En2 - Clearing the Text property clear the text of the Entry correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry
+                x:Name="En2"
+                Text="En2" />
+            <Button 
+                Text="Clear Text"
+                Clicked="OnClearTextButtonClicked"/>
+            <Label
+                Text="En3 - Updating the Text property update the text of the Entry correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry
+                x:Name="En3"
+                Text="En3" />
+            <Button 
+                Text="Update Text"
+                Clicked="OnUpdateTextButtonClicked"/>
+            <Label
+                Text="En4 - Setting the FontSize property changes the size of Entry text correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry
+                FontFamily="OpenSansSemibold"
+                FontSize="Large"
+                Text="En4" />
+            <Label
+                Text="En5 - Setting the TextColor property changes the color of Entry text correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry
+                TextColor="Red"
+                Text="En5" />
+            <Label
+                Text="En6 - Setting the HorizontalTextAlignment property changes the Entry text alignment correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry
+                HorizontalTextAlignment="End"
+                Text="En6" />
+            <!-- PLACEHOLDER -->
+            <Label
+                Text="Placeholder"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <Label
+                Text="En7 - Setting the Text property set the text of the Entry correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry
+                Placeholder="En7" />
+            <Label
+                Text="En8 - Clearing the Text property clear the text of the Entry correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry
+                x:Name="En8"
+                Placeholder="En8" />
+            <Button 
+                Text="Clear Placeholder"
+                Clicked="OnClearPlaceholderButtonClicked"/>
+            <Label
+                Text="En9 - Updating the Text property update the text of the Entry correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry
+                x:Name="En9"
+                Placeholder="En9" />
+            <Button 
+                Text="Update Placeholder"
+                Clicked="OnUpdatePlaceholderButtonClicked"/>
+            <Label
+                Text="E1n0 - Setting the FontSize property changes the size of Entry text correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry
+                FontFamily="OpenSansSemibold"
+                FontSize="Large"
+                Placeholder="En10" />
+            <Label
+                Text="En11 - Setting the PlaceholderColor property changes the color of Entry text correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry
+                PlaceholderColor="Red"
+                Placeholder="En11" />
+            <Label
+                Text="En12 - Setting the HorizontalTextAlignment property changes the Entry text alignment correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry
+                HorizontalTextAlignment="End"
+                Placeholder="En12" />
+            <!-- CLEARBUTTONVISIBILITY -->
+            <Label
+                Text="ClearButtonVisibility"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <Label
+                Text="En13 - Setting the ClearButtonVisibility property update the Entry clear button visibility correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry
+                Text="Never"
+                ClearButtonVisibility="Never" />
+            <Entry 
+                Text="WhileEditing"
+                ClearButtonVisibility="WhileEditing" />
+            <!-- CURSORPOSITION -->
+            <Label
+                Text="CursorPosition"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <Label
+                Text="En14 - Setting the CursorPosition property set the Entry cursor position correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry 
+                Text="Cursor position set" 
+                CursorPosition="5" />
+            <Label
+                Text="En15 - Setting the CursorPosition property set the Entry cursor position correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry 
+                Text="Cursor position and selection length set" 
+                CursorPosition="2" 
+                SelectionLength="10" />
+            <Label
+                Text="En16 - Updating the CursorPosition property update the Entry cursor position correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry 
+                x:Name="En16"
+                Text="Update Cursor position" />
+            <Button 
+                Text="Update Entry CursorPosition"
+                Clicked="OnUpdateCursorPositionButtonClicked"/>
+            <!-- FONT -->
+            <Label
+                Text="Font"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <Label
+                Text="En17 - Setting the Font property set the font of the Entry correctly. (OpenSansSemibold)"
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Button
+                FontFamily="OpenSansSemibold"
+                Text="En17"/>
+            <!-- FONTSIZE -->
+            <Label
+                Text="FontSize"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <Label
+                Text="En18 - Setting the FontSize property set the font size of the Entry correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry
+                FontSize="Default"
+                Text="En18 (Default)"/>
+            <Entry
+                FontSize="Micro"
+                Text="En18 (Micro)"/>
+            <Entry
+                FontSize="Small"
+                Text="En18 (Small)"/>
+            <Entry
+                FontSize="Caption"
+                Text="En18 (Caption)"/>
+            <Entry
+                FontSize="Medium"
+                Text="En18 (Medium)"/>
+            <Entry
+                FontSize="Header"
+                Text="En18 (Header)"/>
+            <Entry
+                FontSize="Subtitle"
+                Text="En18 (Subtitle)"/>
+            <Entry
+                FontSize="Title"
+                Text="En18 (Title)"/>
+            <!-- HORIZONTALTEXTALIGNMENT -->
+            <Label
+                Text="HorizontalTextAlignment"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <Label
+                Text="En19 - Setting the HorizontalTextAlignment property set the text alignment of the Entry correctly."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry 
+                HorizontalTextAlignment="Start"
+                Text="En19"/>
+            <Entry 
+                HorizontalTextAlignment="Center"
+                Text="En19"/>
+            <Entry 
+                HorizontalTextAlignment="End"
+                Text="En19"/>
+            <!-- ISPASSWORD -->
+            <Label
+                Text="IsPassword"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <Label
+                Text="En20 - Setting the IsPassword property present the contents of the field as black circles."
+                Style="{StaticResource SectionDescriptionStyle}"/>
+            <Entry 
+                IsPassword="True"
+                Text="En20"/>
+            <!-- ISTEXTPREDICTIONENABLED -->
+            <Label
+                Text="IsTextPredictionEnabled"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <!-- RETURNCOMMAND -->
+            <Label
+                Text="ReturnCommand"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <!-- RETURNCOMMANDPARAMETER -->
+            <Label
+                Text="ReturnCommandParameter"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <!-- RETURNTYPE -->
+            <Label
+                Text="ReturnType"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <!-- SELECTIONLENGTH -->
+            <Label
+                Text="Selectionlength"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <!-- VERTICALTEXTALIGNMENT -->
+            <Label
+                Text="VerticalTextAlignment"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <!-- EVENTS -->
+            <Label
+                Text="Events"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <!-- CORE -->
+            <Label
+                Text="Core"
+                Style="{StaticResource SectionTitleStyle}"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
